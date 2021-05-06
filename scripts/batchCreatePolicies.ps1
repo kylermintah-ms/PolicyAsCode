@@ -1,4 +1,4 @@
-$policyDefRootFolder = "$env:DefaultWorkingDirectory"+"\sample"
+$policyDefRootFolder = "$env:DefaultWorkingDirectory"+"\policies"
 $subscriptionName = "$env:subscriptionName"
 
 class PolicyDef {
