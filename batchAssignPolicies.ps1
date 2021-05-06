@@ -1,5 +1,5 @@
 $policyObjs = ConvertFrom-Json -InputObject $env:POLICYDEFS
-$policyAssignmentRG = "$(resourceGroupName)$(Release.EnvironmentName)"
+$policyAssignmentRG = "$env:resourceGroupName$(Release.EnvironmentName)"
 $policyDefRootFolder = "$env:DefaultWorkingDirectory"+"\sample"
 
 foreach ($policyDefFolder in (Get-ChildItem -Path $policyDefRootFolder -Directory)) {
